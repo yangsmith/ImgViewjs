@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/layout.css" media="screen">
 </head>
-<body>
+<body >
 
 <h1>Snapshots</h1>
 <ul>
-   <li> <a href="images/dog.jpg" title="a dog iamge"> Dog </a>
+   <li> <a href="images/dog.jpg" onclick="showPic(this); return false" title="a dog iamge"> Dog </a>
    </li>
 
-    <li> <a href="images/fox.jpg" title="a fox iamge"> Fox </a>
+    <li> <a href="images/fox.jpg" onclick="showPic(this); return false" title="a fox iamge"> Fox </a>
     </li>
 
-    <li> <a href="images/cat.jpg" title="a cat iamge"> Cat </a>
+    <li> <a href="images/cat.jpg" onclick="showPic(this); return false" title="a cat iamge"> Cat </a>
     </li>
 </ul>
+
+<img id="placeholder" src="images/placeholder.gif" alt="my image gallery"/>
+
+<p id="description">Choose an image.</p>
+
+<script type="text/javascript" src="js/showPic.js"></script>
+
 </body>
 </html>
